@@ -1,0 +1,11 @@
+services:
+  pos-cash:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        REPO_URL: https://github.com/christroutner/pos-cash.git
+        REPO_REF: master
+    ports:
+      - "8083:80"
+    restart: unless-stopped
