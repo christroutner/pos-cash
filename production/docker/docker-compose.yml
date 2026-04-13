@@ -1,5 +1,6 @@
 services:
   pos-cash:
+    container_name: pos-cash
     build:
       context: .
       dockerfile: Dockerfile
